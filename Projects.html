@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Karan's Garage</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="garage-container">
+
+    <h1 class="page-title">DeLorean Bay</h1>
+
+    <!-- Navigation -->
+
+    <a href="Skills.html" class="wall-sign wall-left">
+        ◀ Mystery Machine Bay
+    </a>
+
+    <a href="Contact.html" class="wall-sign wall-right">
+        SF2002 Bay ▶
+    </a>
+
+    <!-- Directory -->
+
+    <div class="directory-sign" onclick="openDirectory()">
+        Garage Directory
+    </div>
+
+    <!-- PROJECT 1 -->
+
+    <div class="object-wrapper"
+         style="top: 18%; left: 12%;">
+
+        <img
+            src="images/fluxcapacitor-placeholder.png"
+            alt="Flux Capacitor"
+            class="clickable-object"
+            width="130"
+            data-modal-target="project1Modal">
+
+        <div class="object-label">
+            F1 CYOA
+        </div>
+
+    </div>
+
+    <!-- PROJECT 2 -->
+
+    <div class="object-wrapper"
+         style="top: 18%; right: 12%;">
+
+        <img
+            src="images/hoverboard-placeholder.png"
+            alt="Hoverboard"
+            class="clickable-object"
+            width="130"
+            data-modal-target="project2Modal">
+
+        <div class="object-label">
+            Awareness Website
+        </div>
+
+    </div>
+
+    <!-- PROJECT 3 -->
+
+    <div class="object-wrapper"
+         style="top: 50%; left: 15%;">
+
+        <img
+            src="images/project3-placeholder.png"
+            alt="Project Three"
+            class="clickable-object"
+            width="120"
+            data-modal-target="project3Modal">
+
+        <div class="object-label">
+            Future Project
+        </div>
+
+    </div>
+
+    <!-- DELOREAN -->
+
+    <img
+        src="images/delorean-placeholder.png"
+        alt="DeLorean"
+        class="main-car">
+
+</div>
+
+<!-- =====================================
+     PROJECT 1
+===================================== -->
+
+<div class="modal" id="project1Modal">
+
+    <div class="modal-content">
+
+        <span class="close-modal">&times;</span>
+
+        <h2>F1 Choose Your Own Adventure</h2>
+
+        <p>
+            Interactive Formula 1 story game
+            where the player makes decisions
+            that influence the outcome of their
+            racing career.
+        </p>
+
+        <div class="placeholder-image">
+            Project Screenshot
+        </div>
+
+        <p>
+            GitHub:
+        </p>
+
+        <a href="#">
+            GitHub Link Placeholder
+        </a>
+
+    </div>
+
+</div>
+
+<!-- =====================================
+     PROJECT 2
+===================================== -->
+
+<div class="modal" id="project2Modal">
+
+    <div class="modal-content">
+
+        <span class="close-modal">&times;</span>
+
+        <h2>Awareness Website</h2>
+
+        <p>
+            Informational website designed
+            to educate visitors about an
+            important issue through visuals,
+            research, and interactive content.
+        </p>
+
+        <div class="placeholder-image">
+            Project Screenshot
+        </div>
+
+        <p>
+            GitHub:
+        </p>
+
+        <a href="#">
+            GitHub Link Placeholder
+        </a>
+
+    </div>
+
+</div>
+
+<!-- =====================================
+     PROJECT 3
+===================================== -->
+
+<div class="modal" id="project3Modal">
+
+    <div class="modal-content">
+
+        <span class="close-modal">&times;</span>
+
+        <h2>Future Project</h2>
+
+        <p>
+            Placeholder for a future project.
+        </p>
+
+        <div class="placeholder-image">
+            Project Screenshot
+        </div>
+
+        <p>
+            GitHub:
+        </p>
+
+        <a href="#">
+            GitHub Link Placeholder
+        </a>
+
+    </div>
+
+</div>
+
+<!-- =====================================
+     DIRECTORY
+===================================== -->
+
+<div class="modal" id="directoryModal">
+
+    <div class="modal-content">
+
+        <span class="close-modal">&times;</span>
+
+        <h2>Garage Directory</h2>
+
+        <div class="directory-links">
+
+            <a href="Home.html">
+                🏎 RB21 Bay
+            </a>
+
+            <a href="AboutMe.html">
+                👻 Ecto-1 Bay
+            </a>
+
+            <a href="Skills.html">
+                🚌 Mystery Machine Bay
+            </a>
+
+            <a href="Projects.html">
+                ⏰ DeLorean Bay
+            </a>
+
+            <a href="Contact.html">
+                🔴 SF2002 Bay
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

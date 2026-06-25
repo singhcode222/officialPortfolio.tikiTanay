@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Karan's Garage</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="garage-container">
+
+    <h1 class="page-title">Ecto-1 Bay</h1>
+
+    <!-- Navigation -->
+
+    <a href="Home.html" class="wall-sign wall-left">
+        ◀ RB21 Bay
+    </a>
+
+    <a href="Skills.html" class="wall-sign wall-right">
+        Mystery Machine Bay ▶
+    </a>
+
+    <!-- Directory -->
+
+    <div class="directory-sign" onclick="openDirectory()">
+        Garage Directory
+    </div>
+
+    <!-- RADIO -->
+
+    <div class="object-wrapper"
+         style="top: 18%; left: 15%;">
+
+        <img
+            src="images/radio.png"
+            alt="Radio"
+            class="clickable-object"
+            width="120"
+            data-modal-target="radioModal">
+
+        <div class="object-label">
+            Radio
+        </div>
+
+    </div>
+
+    <!-- SOCCER BALL -->
+
+    <div class="object-wrapper"
+         style="top: 20%; right: 15%;">
+
+        <img
+            src="images/ball.png"
+            alt="Soccer Ball"
+            class="clickable-object"
+            width="100"
+            data-modal-target="soccerModal">
+
+        <div class="object-label">
+            Soccer Ball
+        </div>
+
+    </div>
+
+    <!-- GUITAR -->
+
+    <div class="object-wrapper"
+         style="top: 45%; left: 10%;">
+
+        <img
+            src="images/guitar.png"
+            alt="Guitar"
+            class="clickable-object"
+            width="120"
+            data-modal-target="guitarModal">
+
+        <div class="object-label">
+            Guitar
+        </div>
+
+    </div>
+
+    <!-- DEBATE TROPHY -->
+
+    <div class="object-wrapper"
+         style="top: 45%; right: 12%;">
+
+        <img
+            src="images/trophy-placeholder.png"
+            alt="Debate Trophy"
+            class="clickable-object"
+            width="110"
+            data-modal-target="debateModal">
+
+        <div class="object-label">
+            Debate Trophy
+        </div>
+
+    </div>
+
+    <!-- GHOST TRAP -->
+
+    <div class="object-wrapper"
+         style="top: 68%; left: 18%;">
+
+        <img
+            src="images/ghosttrap-placeholder.png"
+            alt="Ghost Trap"
+            class="clickable-object"
+            width="120"
+            data-modal-target="factModal">
+
+        <div class="object-label">
+            Ghost Trap
+        </div>
+
+    </div>
+
+    <!-- ECTO-1 -->
+
+    <img
+        src="images/ghostbusters.png"
+        alt="Ecto-1"
+        class="main-car">
+
+</div>
+
+<!-- ==========================
+     RADIO MODAL
+========================== -->
+
+<div class="modal" id="radioModal">
+
+    <div class="modal-content">
+
+        <span class="close-modal">&times;</span>
+
+        <h2>Radio</h2>
+
+        <h3>The 1975</h3>
+
+        <div class="placeholder-image">
+            Album / Band Image
+        </div>
+
+        <ol>
+            <li>Robbers</li>
+            <li>Chocolate</li>
+            <li>Girls</li>
+            <li>An Encounter</li>
+            <li>About You</li>
+        </ol>
+
+        <br>
+
+        <h3>Oasis</h3>
+
+        <div class="placeholder-image">
+            Album / Band Image
+        </div>
+
+        <ol>
+            <li>Whatever</li>
+            <li>Don't Look Back in Anger</li>
+            <li>Some Might Say</li>
+            <li>Take Me Away</li>
+            <li>The Masterplan</li>
+        </ol>
+
+        <br>
+
+        <h3>The Neighbourhood</h3>
+
+        <div class="placeholder-image">
+            Album / Band Image
+        </div>
+
+        <ol>
+            <li>Baby Came Home 2 / Valentines</li>
+            <li>Void</li>
+            <li>Honest</li>
+            <li>Prey</li>
+            <li>Sadderdaze</li>
+        </ol>
+
+    </div>
+
+</div>
+
+<!-- ==========================
+     SOCCER BALL MODAL
+========================== -->
+
+<div class="modal" id="soccerModal">
+
+    <div class="modal-content">
+
+        <span class="close-modal">&times;</span>
+
+        <h2>Favorite Team</h2>
+
+        <p>
+            Team: Bayern Munich
+        </p>
+
+        <div class="placeholder-image">
+            Team Logo
+        </div>
+
+        <h2>Favorite Player</h2>
+
+        <p>
+            Player: Thomas Müller
+        </p>
+
+        <div class="placeholder-image">
+            Player Image
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ==========================
+     GUITAR MODAL
+========================== -->
+
+<div class="modal" id="guitarModal">
+
+    <div class="modal-content">
+
+        <span class="close-modal">&times;</span>
+
+        <h2>Guitar</h2>
+
+        <p>
+            Information about learning guitar,
+            favorite songs to play, and music
+            interests goes here.
+        </p>
+
+    </div>
+
+</div>
+
+<!-- ==========================
+     DEBATE MODAL
+========================== -->
+
+<div class="modal" id="debateModal">
+
+    <div class="modal-content">
+
+        <span class="close-modal">&times;</span>
+
+        <h2>Speech & Debate</h2>
+
+        <p>
+            Information about Speech and Debate,
+            competitions, and accomplishments
+            goes here.
+        </p>
+
+    </div>
+
+</div>
+
+<!-- ==========================
+     FUN FACT MODAL
+========================== -->
+
+<div class="modal" id="factModal">
+
+    <div class="modal-content">
+
+        <span class="close-modal">&times;</span>
+
+        <h2>Fun Fact</h2>
+
+        <p>
+            Put a fun fact about yourself here.
+        </p>
+
+    </div>
+
+</div>
+
+<!-- ==========================
+     DIRECTORY MODAL
+========================== -->
+
+<div class="modal" id="directoryModal">
+
+    <div class="modal-content">
+
+        <span class="close-modal">&times;</span>
+
+        <h2>Garage Directory</h2>
+
+        <div class="directory-links">
+
+            <a href="Home.html">
+                🏎 RB21 Bay
+            </a>
+
+            <a href="AboutMe.html">
+                👻 Ecto-1 Bay
+            </a>
+
+            <a href="Skills.html">
+                🚌 Mystery Machine Bay
+            </a>
+
+            <a href="Projects.html">
+                ⏰ DeLorean Bay
+            </a>
+
+            <a href="Contact.html">
+                🔴 SF2002 Bay
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

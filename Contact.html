@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Karan's Garage</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="garage-container">
+
+    <h1 class="page-title">SF2002 Bay</h1>
+
+    <!-- Navigation -->
+
+    <a href="Projects.html" class="wall-sign wall-left">
+        ◀ DeLorean Bay
+    </a>
+
+    <a href="Home.html" class="wall-sign wall-right">
+        RB21 Bay ▶
+    </a>
+
+    <!-- Directory -->
+
+    <div class="directory-sign" onclick="openDirectory()">
+        Garage Directory
+    </div>
+
+    <!-- TEAM RADIO -->
+
+    <div class="object-wrapper"
+         style="top: 18%; left: 12%;">
+
+        <img
+            src="images/teamradio-placeholder.png"
+            alt="Team Radio"
+            class="clickable-object"
+            width="130"
+            data-modal-target="gmailModal">
+
+        <div class="object-label">
+            Team Radio
+        </div>
+
+    </div>
+
+    <!-- LAPTOP -->
+
+    <div class="object-wrapper"
+         style="top: 18%; right: 12%;">
+
+        <img
+            src="images/laptop-placeholder.png"
+            alt="Laptop"
+            class="clickable-object"
+            width="130"
+            data-modal-target="linkedinModal">
+
+        <div class="object-label">
+            Laptop
+        </div>
+
+    </div>
+
+    <!-- TELEMETRY SCREEN -->
+
+    <div class="object-wrapper"
+         style="top: 50%; left: 15%;">
+
+        <img
+            src="https://preview.redd.it/we-made-a-website-for-all-f1-related-analysis-including-v0-bmnvq6dsae0d1.gif"
+            alt="Telemetry Screen"
+            class="clickable-object"
+            width="140"
+            data-modal-target="githubModal">
+
+        <div class="object-label">
+            Telemetry Screen
+        </div>
+
+    </div>
+
+    <!-- SF2002 -->
+
+    <img
+        src="images/SF2002.png"
+        alt="SF2002"
+        class="main-car">
+
+</div>
+
+<!-- ==========================
+     GMAIL MODAL
+========================== -->
+
+<div class="modal" id="gmailModal">
+
+    <div class="modal-content">
+
+        <span class="close-modal">&times;</span>
+
+        <h2>Email</h2>
+
+        <p>
+            Reach out through email.
+        </p>
+
+        <p>
+            <a href="mailto:karan.singh.610229@gmail.com">
+                karan.singh.610229@gmail.com
+            </a>
+        </p>
+
+    </div>
+
+</div>
+
+<!-- ==========================
+     LINKEDIN MODAL
+========================== -->
+
+<div class="modal" id="linkedinModal">
+
+    <div class="modal-content">
+
+        <span class="close-modal">&times;</span>
+
+        <h2>LinkedIn</h2>
+
+        <p>
+            Connect with me on LinkedIn.
+        </p>
+
+        <p>
+            <a href="www.linkedin.com/in/karan-singh-6306363aa"
+               target="_blank">
+                Visit LinkedIn
+            </a>
+        </p>
+
+    </div>
+
+</div>
+
+<!-- ==========================
+     GITHUB MODAL
+========================== -->
+
+<div class="modal" id="githubModal">
+
+    <div class="modal-content">
+
+        <span class="close-modal">&times;</span>
+
+        <h2>GitHub</h2>
+
+        <p>
+            View my projects and code.
+        </p>
+
+        <p>
+            <a href="https://github.com"
+               target="_blank">
+                Visit GitHub
+            </a>
+        </p>
+
+    </div>
+
+</div>
+
+<!-- ==========================
+     DIRECTORY MODAL
+========================== -->
+
+<div class="modal" id="directoryModal">
+
+    <div class="modal-content">
+
+        <span class="close-modal">&times;</span>
+
+        <h2>Garage Directory</h2>
+
+        <div class="directory-links">
+
+            <a href="Home.html">
+                🏎 RB21 Bay
+            </a>
+
+            <a href="AboutMe.html">
+                👻 Ecto-1 Bay
+            </a>
+
+            <a href="Skills.html">
+                🚌 Mystery Machine Bay
+            </a>
+
+            <a href="Projects.html">
+                ⏰ DeLorean Bay
+            </a>
+
+            <a href="Contact.html">
+                🔴 SF2002 Bay
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
