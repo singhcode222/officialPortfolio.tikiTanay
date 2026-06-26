@@ -1,8 +1,4 @@
 
-/* ------------------------------
-   root/basic varaivles 
------------------------------- */
-
 :root {
     --text-color: #ffffff;
     --panel-bg: rgba(25, 25, 25, 0.92);
@@ -16,7 +12,7 @@
 
     --directory-bg: rgba(40, 40, 40, 0.92);
 
-    --subtle-glow: 0 0 10px rgba(255,255,255,0.15);
+    --subtle-glow: 0 0 10px rgb(56, 51, 147);
 }
 
 /* light mode */
@@ -34,7 +30,7 @@ body.light-mode {
 
     --directory-bg: rgba(235,235,235,0.95);
 
-    --subtle-glow: 0 0 10px rgba(0,0,0,0.08);
+    --subtle-glow: 0 0 10px rgba(91, 91, 91, 0.08);
 }
 
 
@@ -96,7 +92,7 @@ li {
 .rb21 {
     position: fixed;
 
-    bottom: 25px;
+    bottom: 80px;
     left: 50%;
 
     transform: translateX(-50%);
@@ -157,8 +153,8 @@ li {
 
     transform: translateX(-50%);
 
-    width: 850px;
-    max-width: 75vw;
+    width: 600px;
+    height: auto; 
 
     z-index: 10;
 }
