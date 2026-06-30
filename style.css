@@ -38,19 +38,32 @@ body.light-mode {
 body {
     margin: 0;
     padding: 0;
+    overflow: hidden;
 
-    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+}
+
+/* =============================================
+   GARAGE CONTAINER — the single scene
+   Holds the background image and ALL interactive
+   elements so they share one coordinate space.
+   Previously the background was on <body> and
+   cars used position:fixed (viewport-relative),
+   causing them to drift apart on resize.
+   Now everything is position:absolute inside this
+   fixed-size container.
+   ============================================= */
+.garage-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 
     background-image: url("images/BackgroundGaragePortfolio.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--text-color);
-
-    overflow-x: hidden;
 }
 
 
@@ -78,21 +91,10 @@ li {
     letter-spacing: 1px;
 }
 
-
-
-.garage-container {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-}
-
-/* 
-   car positions */
-
 .rb21 {
-    position: fixed;
+    position: absolute;
 
-    bottom: 80px;
+    bottom: -10%;
     left: 50%;
 
     transform: translateX(-50%);
@@ -104,9 +106,9 @@ li {
 }
 
 .ghostbusters {
-    position: fixed;
+    position: absolute;
 
-    bottom: 25px;
+    bottom: 3%;
     left: 50%;
 
     transform: translateX(-50%);
@@ -118,9 +120,9 @@ li {
 }
 
 .sf2002 {
-    position: fixed;
+    position: absolute;
 
-    bottom: 25px;
+    bottom: 3%;
     left: 50%;
 
     transform: translateX(-50%);
@@ -132,9 +134,9 @@ li {
 }
 
 .delorean {
-    position: fixed;
+    position: absolute;
 
-    bottom: 25px;
+    bottom: 3%;
     left: 50%;
 
     transform: translateX(-50%);
@@ -146,14 +148,15 @@ li {
 }
 
 .mystery-machine {
-    position: fixed;
+    position: absolute;
 
-    bottom: 25px;
+    bottom: 3%;
     left: 50%;
 
     transform: translateX(-50%);
 
     width: 600px;
+    max-width: 50vw;
     height: auto; 
 
     z-index: 10;
@@ -234,7 +237,7 @@ li {
 
 
 .wall-sign {
-    position: fixed;
+    position: absolute;
 
     top: 75%;
 
@@ -483,6 +486,39 @@ li {
     align-items: center;
 
     margin: 15px 0;
+}
+
+/* ------------------------------
+   Contact page link rows
+   Flexbox row: [logo] + [link text]
+   Links stay white regardless of visited state.
+------------------------------ */
+
+.contact-link-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+/* SVG logos — 32px square, vertically centered */
+.contact-logo-emoji {
+    font-size: 28px;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+/* Links stay white always — no purple on visit */
+.contact-link {
+    color: #ffffff !important;
+    text-decoration: underline;
+    font-size: 1rem;
+}
+.contact-link:visited {
+    color: #ffffff !important;
+}
+.contact-link:hover {
+    color: #cccccc !important;
 }
 
 /* responsive */
