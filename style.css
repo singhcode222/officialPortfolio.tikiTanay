@@ -33,8 +33,6 @@ body.light-mode {
     --subtle-glow: 0 0 10px rgba(91, 91, 91, 0.08);
 }
 
-
-
 body {
     margin: 0;
     padding: 0;
@@ -43,30 +41,17 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--text-color);
 }
-
-/* =============================================
-   GARAGE CONTAINER — the single scene
-   Holds the background image and ALL interactive
-   elements so they share one coordinate space.
-   Previously the background was on <body> and
-   cars used position:fixed (viewport-relative),
-   causing them to drift apart on resize.
-   Now everything is position:absolute inside this
-   fixed-size container.
-   ============================================= */
+/* garage container and background*/
 .garage-container {
     position: relative;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-
     background-image: url("images/BackgroundGaragePortfolio.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-
-
 
 h1,
 h2,
@@ -87,8 +72,8 @@ li {
     background: rgba(0,0,0,0.4);
     border-radius: 8px;
 
-    font-size: 2rem;
-    letter-spacing: 1px;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
 }
 
 .rb21 {
@@ -167,7 +152,7 @@ li {
 
     cursor: pointer;
 
-    filter: drop-shadow(0 4px 12px rgba(0,0,0,0.6));
+    filter: drop-shadow(0 6px 18px rgba(0,0,0,0.7));
 
     transition:
         transform 0.25s ease,
@@ -177,7 +162,7 @@ li {
 .clickable-object:hover {
     transform: scale(1.03);
 
-    filter: drop-shadow(0 0 20px rgba(0,0,0,0.8));
+    filter: drop-shadow(0 0 35px rgba(0,0,0,0.9));
 }
 
 
@@ -197,11 +182,12 @@ li {
 
     color: var(--text-color);
 
-    padding: 6px 10px;
+    padding: 8px 14px;
 
     border-radius: 6px;
 
-    font-size: 0.8rem;
+    font-size: 1rem;
+    font-weight: 600;
 
     opacity: 0;
     pointer-events: none;
@@ -305,9 +291,7 @@ li {
     box-shadow: var(--subtle-glow);
 }
 
-/* ------------------------------
-   modal overlay
------------------------------- */
+/*  modal overlay*/
 
 .modal {
     display: none;
@@ -324,9 +308,7 @@ li {
     align-items: center;
 }
 
-/* telementry 
- */
-
+/* telementry */
 .modal-content {
     position: relative;
 
@@ -359,9 +341,7 @@ li {
     margin-bottom: 10px;
 }
 
-/* modal close button
-*/
-
+/* modal close button*/
 .close-modal {
     position: absolute;
 
@@ -373,11 +353,7 @@ li {
     font-size: 1.4rem;
     font-weight: bold;
 }
-
-/* 
-   directory.links
- */
-
+/* directory.links*/
 .directory-links {
     display: flex;
     flex-direction: column;
