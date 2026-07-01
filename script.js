@@ -1,16 +1,13 @@
 /* 
    all models 
 */
-
 document.addEventListener("DOMContentLoaded", () => {
 
     initializeModals();
     initializeTheme();
 
 });
-
 /* open and close modal */
-
 function initializeModals() {
 
     const openButtons = document.querySelectorAll("[data-modal-target]");
@@ -29,7 +26,6 @@ function initializeModals() {
         });
 
     });
-
     const closeButtons = document.querySelectorAll(".close-modal");
 
     closeButtons.forEach(button => {
@@ -45,7 +41,6 @@ function initializeModals() {
         });
 
     });
-
     const modals = document.querySelectorAll(".modal");
 
     modals.forEach(modal => {
@@ -59,9 +54,7 @@ function initializeModals() {
         });
 
     });
-
 }
-
 /*  acesiblity */
 
 function initializeTheme() {
@@ -71,7 +64,6 @@ function initializeTheme() {
     if (savedTheme === "light") {
         document.body.classList.add("light-mode");
     }
-
 }
 function toggleTheme() {
 
@@ -86,7 +78,6 @@ function toggleTheme() {
     );
 
 }
-
 /* 
    directory */
 
@@ -100,17 +91,13 @@ function openDirectory() {
     }
 
 }
-
 function openModal(modalId) {
 
     const modal = document.getElementById(modalId);
-
     if (modal) {
         modal.style.display = "flex";
     }
-
 }
-
 function closeModal(modalId) {
 
     const modal = document.getElementById(modalId);
@@ -120,3 +107,19 @@ function closeModal(modalId) {
     }
 
 }
+
+document.querySelectorAll(".hotspot").forEach(hotspot => {
+
+    hotspot.addEventListener("click", () => {
+
+        const modalId = hotspot.dataset.modalTarget;
+
+        const modal = document.getElementById(modalId);
+
+        if(modal){
+            modal.style.display = "flex";
+        }
+
+    });
+
+});

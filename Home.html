@@ -4,216 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Karanveer's Garage</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="garage-container">
+<nav class="top-directory">
+    <a href="Home.html">RB21</a>
+    <a href="AboutMe.html">Ecto-1</a>
+    <a href="Skills.html">Mystery Machine</a>
+    <a href="Projects.html">DeLorean</a>
+    <a href="Contact.html">SF2002</a>
+</nav>
 
-    <!-- page name -->
+<div class="garage-container">
 
     <h1 class="page-title">RB21 Bay</h1>
 
-    <!-- left right nav-->
-
-    <a href="Contact.html" class="wall-sign wall-left">
-        ◀ SF2002 Bay
+    <a href="Contact.html" class="bay-arrow left-arrow">
+        ❮
     </a>
 
-    <a href="AboutMe.html" class="wall-sign wall-right">
-        Ecto-1 Bay ▶
+    <a href="AboutMe.html" class="bay-arrow right-arrow">
+        ❯
     </a>
 
-    <!--garage directory -->
 
-    <div class="directory-sign"
-         onclick="openDirectory()">
-         Garage Directory
-    </div>
-
-    <!-- tire stack -->
-
-    <div class="object-wrapper"
-         style="top: 65%; left: 15%;">
-
-        <img
-            src="images/TiresPirelli.png"
-            alt="Tire Stack"
-            class="clickable-object"
-            width="150"
-            data-modal-target="settingsModal">
-
-        <div class="object-label">
-            Settings
-        </div>
-
-    </div>
-
-    <!-- max helmet
-     -->
-
-    <div class="object-wrapper"
-         style="top: 45%; left: 70%;">
-
-        <img
-            src="images/helmet.png"
-            alt="Helmet"
-            class="clickable-object"
-            width="130"
-            height="auto"
-            data-modal-target="welcomeModal">
-        <div class="object-label">
-            Welcome
-        </div>
-
-    </div>
-
-    <!-- whiteboard -->
-
-    <div class="object-wrapper"
-         style="top: 35%; right: 85%;">
-
-        <img
-            src="images/TV.png"
-            alt="Monitor"
-            class="clickable-object"
-            width="250"
-            height="auto"
-            data-modal-target="overviewModal">
-
-        <div class="object-label">
-            Site Overview
-        </div>
-
-    </div>
-
+<div class="garage-container">
 
     <img
         src="images/RB21.png"
-        alt="RB21"
-        class="rb21">
+        alt="RB21 Bay"
+        class="garage-image">
+
+    <!-- hotspots here -->
+
 </div>
 
-<!-- welcome screen-->
 
-<div class="modal" id="welcomeModal">
+</div>
+    <!-- TV -->
 
-    <div class="modal-content">
+    <div
+        class="hotspot tv-hotspot"
+        data-modal-target="overviewModal">
 
-        <span class="close-modal">&times;</span>
-
-        <h2>Welcome</h2>
-
-        <p>
-            Welcome to my portfolio garage.
-        </p>
-
-        <p>
-            Each vehicle represents a different category within my portfolio. 
-            Explore each bay to see my work and learn more about me.
-        </p>
-
-        <p>
-            You can explore by clicking through the objects in the garage. 
-        </p>
+        <div class="hover-card">
+            <h3>Garage Overview</h3>
+            <p>
+                View all bays and learn how the portfolio is organized.
+            </p>
+        </div>
 
     </div>
 
-</div>
+    <!-- Helmet -->
 
-<!-- overview -->
+    <div
+        class="hotspot helmet-hotspot"
+        data-modal-target="welcomeModal">
 
-<div class="modal" id="overviewModal">
+        <div class="hover-card">
+            <h3>Welcome</h3>
+            <p>
+                Meet Max Verstappen and begin exploring the garage.
+            </p>
+        </div>
 
-    <div class="modal-content">
-        <span class="close-modal">&times;</span>
-        <h2>Site Overview</h2>
-        <p>
-            RB21 Bay → Home 🏠
-        </p>
-        <p>
-            Ecto-1 Bay → About Me 🙀
-        </p>
-        <p>
-            Mystery Machine Bay → Skills 📝
-        </p>
-        <p>
-            DeLorean Bay → Projects 💻
-        </p>
-        <p>
-            SF2002 Bay → Contact 📞
-        </p>
     </div>
-</div>
 
-<!-- settings -->
+    <!-- Tires -->
 
-<div class="modal" id="settingsModal">
+    <div
+        class="hotspot tire-hotspot"
+        data-modal-target="settingsModal">
 
-    <div class="modal-content">
-
-        <span class="close-modal">&times;</span>
-
-        <h2>Settings</h2>
-
-        <p>
-            Choose your preferred display mode.
-        </p>
-
-        <div class="toggle-container">
-
-            <button
-                class="toggle-button"
-                onclick="toggleTheme()">
-
-                Toggle Light / Dark Mode
-
-            </button>
-
+        <div class="hover-card">
+            <h3>Settings</h3>
+            <p>
+                Toggle light mode and dark mode.
+            </p>
         </div>
 
     </div>
 
 </div>
 
-<!-- directroy -->
-
-<div class="modal" id="directoryModal">
-
-    <div class="modal-content">
-
-        <span class="close-modal">&times;</span>
-
-        <h2>Garage Directory</h2>
-
-        <div class="directory-links">
-
-            <a href="Home.html">
-                🏎 RB21 Bay
-            </a>
-
-            <a href="AboutMe.html">
-                👻 Ecto-1 Bay
-            </a>
-
-            <a href="Skills.html">
-                🚌 Mystery Machine Bay
-            </a>
-
-            <a href="Projects.html">
-                ⏰ DeLorean Bay
-            </a>
-
-            <a href="Contact.html">
-                🔴 SF2002 Bay
-            </a>
-
-        </div>
-
-    </div>
-
-</div>
+<!-- KEEP ALL YOUR EXISTING MODALS BELOW THIS POINT -->
 
 <script src="script.js"></script>
 
